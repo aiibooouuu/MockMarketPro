@@ -1,0 +1,90 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+    letter-spacing: 2px;
+    gap: 1.2rem;
+    padding-right: 2rem;
+}
+
+.navbar_logo img{
+    height: 92px;
+    width: 92px;
+    min-width: 72px;
+    min-height: 72px;
+    border-radius: 18px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+}
+
+
+.navbar_logo span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2.5px;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar_slider {
+    position: absolute;
+    bottom: 8px;
+    height: 40px;
+    background: #fff;
+    border-radius: 8px;
+    transition: left 0.5s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+    z-index: 0;
+    /* Default width and left for initial render */
+    left: 0;
+    width: 0;
+}
+
+.navbar_links a {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: color 0.2s;
+    margin-bottom: 6px;
+}
+
+.navbar_links a.active {
+    color: black;
+}
+
+.navbar_logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-left: 15px;
+}

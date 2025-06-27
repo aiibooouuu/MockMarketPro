@@ -1,0 +1,96 @@
+.card {
+max-width: 370px;
+margin: 2rem auto;
+padding: 2rem 1.5rem;
+background: #181f2e;
+border-radius: 14px;
+box-shadow: 0 4px 24px rgba(16,22,36,0.18), 0 1.5px 4px rgba(16,22,36,0.12);
+font-family: 'Inter', Arial, sans-serif;
+border-left: 6px solid #2d7cf6;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+}
+
+.card h2 {
+margin: 0 0 0.5rem 0;
+font-size: 1.5rem;
+color: #2d7cf6;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+.card p {
+margin: 0.25rem 0;
+color: #222;
+font-size: 1rem;
+font-weight: 400;
+letter-spacing: 0.2px;
+}
+
+.card-header {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.avatar {
+width: 54px;
+height: 54px;
+border-radius: 50%;
+background: #2d7cf6;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+font-weight: bold;
+box-shadow: 0 2px 8px rgba(45,124,246,0.18);
+}
+
+.card-header h2 {
+margin: 0;
+font-size: 1.4rem;
+color: #e3e6ed;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+.job-title {
+font-size: 1rem;
+color: #7a869a;
+margin-top: 2px;
+font-weight: 500;
+}
+
+.card-divider {
+border: none;
+border-top: 1px solid #232b3e;
+margin: 1.2rem 0 1rem 0;
+}
+
+.card-details {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+.label {
+color: #7a869a;
+font-size: 0.98rem;
+margin-right: 0.5rem;
+font-weight: 500;
+}
+
+.value {
+color: #e3e6ed;
+font-size: 1.05rem;
+font-weight: 400;
+}
+
+@media (max-width: 500px) {
+.card {
+    max-width: 95vw;
+    padding: 1.2rem 0.8rem;
+}
+}

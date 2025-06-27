@@ -1,0 +1,115 @@
+.create-modal {
+position: fixed;
+top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(20,22,30,0.75);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2000;
+}
+
+.create-modal-content {
+background: rgba(30,32,48,0.98);
+border-radius: 18px;
+box-shadow: 0 8px 40px rgba(80,80,160,0.18);
+padding: 2.5rem 2.5rem 2rem 2.5rem;
+min-width: 340px;
+width: 100%;
+max-width: 400px;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+animation: fadeinpop 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.create-close-btn {
+position: absolute;
+top: 1.2rem;
+right: 1.2rem;
+background: none;
+border: none;
+color: #b3b8d0;
+font-size: 1.3rem;
+cursor: pointer;
+transition: color 0.2s;
+}
+.create-close-btn:hover {
+color: #6366f1;
+}
+
+.create-form {
+display: flex;
+flex-direction: column;
+gap: 1.1rem;
+margin-top: 1.2rem;
+}
+
+.input-group {
+display: flex;
+align-items: center;
+background: #181a20;
+border-radius: 8px;
+padding: 0.6rem 1rem;
+border: 1px solid #23263a;
+transition: border 0.2s;
+}
+
+.input-group:focus-within {
+border: 1.5px solid #6366f1;
+}
+
+.input-icon {
+color: #6366f1;
+font-size: 1.1rem;
+margin-right: 0.8rem;
+}
+
+.create-form input {
+background: transparent;
+border: none;
+outline: none;
+color: #e5e7ef;
+font-size: 1rem;
+width: 100%;
+padding: 0.5rem 0;
+}
+
+.show-password-btn {
+background: none;
+border: none;
+color: #6366f1;
+font-size: 1.1rem;
+margin-left: 0.5rem;
+cursor: pointer;
+outline: none;
+display: flex;
+align-items: center;
+transition: color 0.2s;
+}
+.show-password-btn:hover {
+color: #60a5fa;
+}
+
+.create-submit-btn {
+margin-top: 0.7rem;
+padding: 0.8rem 2.2rem;
+background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+color: #fff;
+font-weight: 600;
+font-size: 1.08rem;
+border: none;
+border-radius: 8px;
+box-shadow: 0 4px 24px rgba(80,80,160,0.12);
+cursor: pointer;
+transition: background 0.2s, transform 0.2s;
+}
+.create-submit-btn:hover {
+background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+transform: translateY(-2px) scale(1.04);
+}
+
+@keyframes fadeinpop {
+from { opacity: 0; transform: scale(0.92);}
+to { opacity: 1; transform: scale(1);}
+}

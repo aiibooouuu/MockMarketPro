@@ -1,0 +1,9 @@
+    /* In Navbar.css or SelfNavbar.css */
+    .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative; /* or fixed if you want it always visible */
+    z-index: 10;
+    }
